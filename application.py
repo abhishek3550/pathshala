@@ -11,8 +11,7 @@ from flask import jsonify
 
 
 app=Flask(__name__)
-
-engine = create_engine("postgresql://abhishek:welcome1234@127.0.0.1:5432/mydb")
+engine = create_engine("postgresql://nzvpobdbklccib:9fa6961f0a96291be84be6ef822b2c5f0be9a2fdfd9414d0efd2a71a4403be65@ec2-54-175-117-212.compute-1.amazonaws.com:5432/dc61mdecpgjv9j")
 db=scoped_session(sessionmaker(bind=engine))
 
 #session time last for 1 day only
